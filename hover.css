@@ -1,0 +1,50 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #222;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+}
+
+.main .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 30vw;
+    height: 70vh;
+    background: transparent;
+    overflow: hidden;
+
+}
+
+.main .container .sqr {
+    width: 15px;
+    height: 15px;
+    background-color: #111;
+    margin: 1px;
+        transition: 1s ease;
+}
+
+.sqr:hover {
+    transition-duration: 0s;
+}
+@media (max-width:480px) {
+    .main{
+        margin: 0px;
+    }
+    .main .container{
+        width:90vw;
+    }
+}
